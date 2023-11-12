@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Aritmatika Aziz -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aritmatika HTML CSS Javascript</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    Angka 1 <input type="number" size="3" id="angka1"><br><br>
+    Angka 2 <input type="number" size="3" id="angka2"><br><br>
+    Hasil = <input type="number" size="6" id="hasil"><br><br>
+    <input type="button" onclick="tambah()" value="+">
+    <input type="button" onclick="kurang()" value="-">
+    <input type="button" onclick="kali()" value="X">
+    <input type="button" onclick="bagi()" value="/">
+    </body>
+    <script>
+        function tambah(){
+    var angka1=document.getElementById("angka1").value;
+    var angka2=document.getElementById("angka2").value;
+    var hasil=parseInt(angka1)+parseInt(angka2);
+    document.getElementById("hasil").value=hasil;
+}
+function kurang(){
+    var angka1=document.getElementById("angka1").value;
+    var angka2=document.getElementById("angka2").value;
+    var hasil=parseInt(angka1)-parseInt(angka2);
+    document.getElementById("hasil").value=hasil;
+}
+function kali(){
+    var angka1=document.getElementById("angka1").value;
+    var angka2=document.getElementById("angka2").value;
+    var hasil=parseInt(angka1)*parseInt(angka2);
+    document.getElementById("hasil").value=hasil;
+}
+function bagi(){
+    var angka1=document.getElementById("angka1").value;
+    var angka2=document.getElementById("angka2").value;
+    var hasil=parseInt(angka1)/parseInt(angka2);
+    document.getElementById("hasil").value=hasil;
+}
+    </script>
+</body>
+</html>

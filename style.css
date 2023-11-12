@@ -1,0 +1,17 @@
+body{
+
+    overflow: hidden;
+
+    align-content: center;
+
+    background:linear-gradient(gray,steelblue);
+ 
+    color: white;
+ 
+    padding: 15%;
+ 
+    margin:auto;
+    width: 10;
+    background-attachment: fixed;
+ 
+   }
